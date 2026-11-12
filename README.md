@@ -65,37 +65,9 @@ The application is contained in [lab/main.py](lab/main.py):
 
 There is no web server or database setup in this version. Input and output stay in local files.
 
-## Run Locally
+## Requirements
 
-Install Python 3 with Tkinter support, then:
-
-```sh
-git clone https://github.com/Tunayblg/UniSched.git
-cd UniSched
-python -m venv .venv
-```
-
-Activate the environment:
-
-```powershell
-# Windows PowerShell
-.\.venv\Scripts\Activate.ps1
-```
-
-```sh
-# macOS / Linux
-source .venv/bin/activate
-```
-
-Install the external dependencies and launch from the application directory:
-
-```sh
-python -m pip install pandas openpyxl
-cd lab
-python main.py
-```
-
-`python -m tkinter` can be used to check that Tkinter is available. Prefer `.xlsx` inputs; although the picker displays `.xls`, the course-outcome loader uses openpyxl, so legacy `.xls` files are not supported throughout the workflow.
+Requires Python 3 with Tkinter, pandas and openpyxl. The application uses local .xlsx workbooks; no server or database is needed.
 
 ## Working with Your Data
 
