@@ -1,6 +1,8 @@
-# **AutoSchedU – Automated Course Scheduling System**
+# UniSched — University Timetable Planner
 
-AutoSchedU is a Django-based academic course scheduling system designed for university-level use. It automates the creation of weekly course timetables, optimizes room usage, prevents conflicts, and simplifies student and instructor enrollment workflows. The project includes an Excel-based batch enrollment system and an intelligent scheduling algorithm that dynamically assigns courses based on availability and constraints.
+**Turn course constraints into a weekly teaching plan.**
+
+UniSched helps university coordinators generate course timetables around instructor availability, classroom capacity and course requirements. Built with Django, it brings automatic scheduling, Excel-based enrollment and role-specific schedule views into one workflow, with manual adjustments available through the admin panel.
 
 ---
 
@@ -53,5 +55,4 @@ The scheduling algorithm works by:
 
 - `models.py` – Database models for users, courses, departments, etc.  
 - `admin.py` – Custom admin views, Excel upload logic, and UI integration  
-- `scheduler.py` – Main algorithm logic for course placement  
-  
+- `scheduler.py` – Main algorithm logic for course placement
